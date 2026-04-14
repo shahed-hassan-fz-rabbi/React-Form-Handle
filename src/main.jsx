@@ -10,6 +10,8 @@ import{
   RouterProvider,
 
 } from 'react-router-dom';
+import UserForm from './CustomHook/UserForm.jsx';
+import FormTable from './CustomHook/FormTable.jsx';
 
 
 const router = createBrowserRouter(
@@ -21,6 +23,14 @@ const router = createBrowserRouter(
     {
       path: "/form",
       element: <Form />
+    },
+    {
+      path: "/custom-hook",
+      element : <UserForm />
+    },
+    {
+      path : "/form-table",
+      element : <FormTable />
     }
   ]
 )
